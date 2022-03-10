@@ -3,7 +3,8 @@
     --level-1: #272727;
     --level-5: #373737;
     --text: #eee;
-    --text-highlightened: #ccc;
+    --text-highlightened: #bbb;
+    --prim: #8c62db;
 }
 
 body {
@@ -26,8 +27,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2rem;
-    width: 32rem;
+    margin: 1rem;
+    max-width: 32rem;
 }
 
 .box {
@@ -44,6 +45,11 @@ body {
 .a {
     color: var(--text-highlightened);
     text-decoration: none;
+    transition: all ease-in-out 150ms;
+}
+
+.a:hover {
+    color: var(--prim);
 }
 
 .ul {
@@ -52,6 +58,7 @@ body {
     margin-top: 0.25rem;
 }
 
+
 table {
     border-collapse: collapse;
     width: 100%;
@@ -59,4 +66,8 @@ table {
 
 table tr td:first-child {
     padding-right: 1rem;
+}
+
+table tr td {
+    vertical-align: text-top;
 }
